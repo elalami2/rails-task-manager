@@ -1,0 +1,15 @@
+<h1>Task#edit</h1>
+
+<p>
+<%= link_to "Edit this task", edit_path(@tasks) %>
+</p>
+
+<p><%= @tasks.details %></p>
+<p>
+
+<%= check_box "@tasks", "completed", {:checked => @tasks.completed, :disabled => true}%> This task is
+<br>
+
+<%= link_to "go back", tasks_path %>
+</p>
+
